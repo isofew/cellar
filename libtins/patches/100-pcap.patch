@@ -1,0 +1,11 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -50,7 +50,7 @@ SET(LIBTINS_VERSION "${LIBTINS_VERSION_MAJOR}.${LIBTINS_VERSIO
+ SET(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/"
+
+ # Look for libpcap
+-FIND_PACKAGE(PCAP REQUIRED)
++#FIND_PACKAGE(PCAP REQUIRED)
+
+ # Set some Windows specific flags
+ IF(WIN32)
