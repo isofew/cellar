@@ -13,3 +13,20 @@ scripts/feeds update -a
 scripts/feeds update cellar
 scripts/feeds install -p cellar some-package-name
 ```
+
+### Dev-Script
+```bash
+#!/bin/bash
+# a simple package update script you may find helpful
+
+rm -f `find bin -name $1*`
+
+pfx=package/$1
+
+make $pfx/clean $2 &&
+make $pfx/compile $2 &&
+make $pfx/install $2 &&
+
+scp `find bin -name $1*` root@openwrt:~ &&
+ssh root@openwrt "opkg remove $1 && opkg install $1* && $1"
+```
