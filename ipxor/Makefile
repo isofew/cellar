@@ -12,8 +12,8 @@ include $(INCLUDE_DIR)/package.mk
 define Package/$(PKG_NAME)
 	SECTION:=utils
 	CATEGORY:=Utilities
-  TITLE:=ipv4/v6 xor mask
-  URL:=https://github.com/isofew/ipxor
+	TITLE:=ipv4/v6 xor mask
+	URL:=https://github.com/isofew/ipxor
 	DEPENDS:=+libstdcpp +libnetfilter-queue
 endef
 
