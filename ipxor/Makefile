@@ -1,11 +1,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=ipxor
-PKG_VERSION:=1.0
+PKG_VERSION:=1.0.1
 
 PKG_SOURCE:=v$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://github.com/isofew/ipxor/archive
-PKG_MD5SUM:=a50c5bd71d064eeb5a8e2eeb7c3783f6
+PKG_MD5SUM:=76eb7dee64a406c4e84571b90d0294fb
 
 include $(INCLUDE_DIR)/package.mk
 
