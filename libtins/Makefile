@@ -21,7 +21,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=Libraries
   TITLE:=High-level, multiplatform C++ network packet sniffing and crafting library
   URL:=https://github.com/mfontanini/libtins
-  DEPENDS:=+libpcap +libstdcpp
+  DEPENDS:=+libpcap +libstdcpp +libopenssl
 endef
 
 define Build/Configure
